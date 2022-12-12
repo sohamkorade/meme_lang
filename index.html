@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meme-Bhasha</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<link rel="stylesheet" data-name="vs/editor/editor.main"
+		href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.min.js"></script>
+</head>
+
+<body>
+	<div class="ui menu" id="menu">
+		<div class="right menu">
+			<div class="item">
+				<button class="ui green button" onclick="run()">Run</button>
+			</div>
+			<div class="item">
+				<button class="ui button" onclick="output_compiled()">Compile</button>
+			</div>
+		</div>
+	</div>
+	<div class="ui two column stackable grid">
+		<div class="column">
+			<div class="ui segment">
+				<div class="ui form">
+					<div class="field">
+						<label>Write code here</label>
+						<div id="editor" style="height:400px;border:1px solid black;"></div>
+						<!-- <textarea style="font-family: monospace;" id="editor" cols="30" rows="10">
+maan lo x=kitne("x")
+maan lo y=kitne("y")
+chhaapo(x+y)</textarea> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+
+			<div class="ui segment">
+				<div class="ui form">
+					<div class="field">
+						<label>Output</label>
+						<img class="ui fluid rounded image" src="" id="meme">
+						<pre id="output" data-lang="text/javascript" cols="30" rows="10"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
