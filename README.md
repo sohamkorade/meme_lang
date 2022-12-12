@@ -16,10 +16,10 @@ If in doubt, just type normal javascript code, the autocomplete will help you.
 
 
 ## About
-- This was made as a fun project. It was inspired by [bhai-lang](https://bhailang.js.org/). The idea was using Hindi instead of English is taken from that.
+- This was made as a fun project. It was inspired by [bhai-lang](https://bhailang.js.org/). The idea of using Hindi instead of English is taken from that.
 
 - Meme-lang additionally show memes if your code has errors.
-e.g. `Syntax error` shows
+e.g. `Syntax error` shows this famous meme "Kuch to gadbad hai Daya" from CID.
 
 ![this](memes/download.jpeg)
 
